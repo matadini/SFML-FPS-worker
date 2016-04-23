@@ -151,6 +151,31 @@
   <ItemGroup>
     <ClInclude Include="fps-worker.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="App.VC.db" />
+    <None Include="Release\App.exe" />
+    <None Include="Release\App.iobj" />
+    <None Include="Release\App.ipdb" />
+    <None Include="Release\App.pdb" />
+    <None Include="Release\App.tlog\App.lastbuildstate" />
+    <None Include="Release\App.tlog\CL.command.1.tlog" />
+    <None Include="Release\App.tlog\CL.read.1.tlog" />
+    <None Include="Release\App.tlog\CL.write.1.tlog" />
+    <None Include="Release\App.tlog\link.command.1.tlog" />
+    <None Include="Release\App.tlog\link.read.1.tlog" />
+    <None Include="Release\App.tlog\link.write.1.tlog" />
+    <None Include="Release\sfml-graphics-2.dll" />
+    <None Include="Release\sfml-system-2.dll" />
+    <None Include="Release\sfml-window-2.dll" />
+    <None Include="Release\vc140.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Release\App.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Release\fps-worker.obj" />
+    <Object Include="Release\main.obj" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
