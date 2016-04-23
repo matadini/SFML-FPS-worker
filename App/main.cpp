@@ -1,3 +1,4 @@
+/* Example usage */
 #include <SFML/Graphics.hpp>
 #include "fps-worker.h"
 
