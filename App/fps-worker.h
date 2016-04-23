@@ -3,10 +3,10 @@
 
 #include <SFML/System.hpp>
 
-class FPS_Manager
+class FpsWorker
 {
 public:
-	FPS_Manager(int obj);
+	FpsWorker(int obj);
 
 	void setLog(bool obj);
 	void work();

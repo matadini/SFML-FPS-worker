@@ -1,7 +1,7 @@
 #include "fps-worker.h"
 #include <iostream>
 
-FPS_Manager::FPS_Manager(int obj) :
+FpsWorker::FpsWorker(int obj) :
 	m_sleepValue(0.0),
 	m_miniFPS(obj-5),
 	m_maxFPS(obj+5),
@@ -10,13 +10,13 @@ FPS_Manager::FPS_Manager(int obj) :
 }
 
 
-void FPS_Manager::setLog(bool obj){
+void FpsWorker::setLog(bool obj){
 	m_showLog = obj;
 }
 
 
 /* Use this function in main sfml-app loop */
-void FPS_Manager::work(){
+void FpsWorker::work(){
 
 	/* Get current app FPS */
 	m_timeBuffer = m_clockBuffer.restart();
@@ -43,7 +43,7 @@ void FPS_Manager::work(){
 	sf::sleep(sf::seconds((float)m_sleepValue));
 }
 
-float FPS_Manager::getFPS(){
+float FpsWorker::getFPS(){
 
 	return (1000000.0f / m_timeBuffer.asMicroseconds());
 }
