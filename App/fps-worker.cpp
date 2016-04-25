@@ -3,8 +3,8 @@
 
 FpsWorker::FpsWorker(int obj) :
 	m_sleepValue(0.0),
-	m_miniFPS(obj-5),
-	m_maxFPS(obj+5),
+	m_miniFPS(obj-m_errorMargin),
+	m_maxFPS(obj+ m_errorMargin),
 	m_currentFPS(0.f),
 	m_showLog(false){ 
 }
@@ -36,7 +36,7 @@ void FpsWorker::work(){
 
 	/* If log is on, show it in console */
 	if (m_showLog){
-		std::cout << "FPS: " << this->m_currentFPS << std::endl;
+		std::cout << "FPS: " << m_currentFPS << std::endl;
 	}
 
 	/* Sleep theard */

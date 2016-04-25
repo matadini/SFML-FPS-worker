@@ -19,6 +19,7 @@ private:
 
 	int m_miniFPS;
 	int m_maxFPS;
+	const int m_errorMargin = 5;
 
 	float m_currentFPS;
 	float getFPS();
